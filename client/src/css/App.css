@@ -1,0 +1,669 @@
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+a {
+  text-decoration: none !important;
+  color: #6c757d;
+}
+
+body {
+  background-color: #454545;
+}
+
+textarea {
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+
+.icon-bar-horizontal-searching {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #6c757d;
+}
+
+.bar-parent-searching {
+  height: 100%;
+  max-width: 35%;
+  width: 35%;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  height: 90%;
+  border-radius: 10px;
+  width: 100%;
+}
+.search-bar button {
+  height: 80%;
+  margin: auto 10px auto 10px;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  color: black;
+  font-weight: 450;
+}
+.search-bar #search-button {
+  background-color: #339CFE;
+  border-radius: 7px;
+  height: 75%;
+  color: white;
+}
+
+.input-part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+.input-part .form-control {
+  border-style: none;
+}
+.input-part input {
+  background-color: rgba(0, 0, 0, 0);
+  width: 95%;
+}
+
+.user-on-list {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  min-height: 60px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: lighter;
+  width: 92%;
+  margin: 10px auto 10px auto;
+}
+.user-on-list:hover {
+  cursor: pointer;
+}
+.user-on-list #user-url {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  overflow-wrap: break-word !important;
+  overflow-x: hidden;
+  margin-left: 10px;
+  font-size: 15px;
+  width: 70%;
+  text-overflow: clip;
+}
+.user-on-list button {
+  background-color: #339CFE;
+  color: white;
+  font-size: 15px;
+  font-weight: lighter;
+  border-style: none;
+  border-radius: 6px;
+  margin-right: 10px;
+  height: 40px;
+}
+
+.notification-option {
+  width: 100%;
+  background-color: white;
+  border-style: none;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.interaction {
+  display: flex;
+  flex-direction: row;
+  min-height: 60px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  margin: 10px auto 10px auto;
+  font-weight: lighter;
+  justify-content: space-between;
+  align-items: center;
+}
+.interaction:hover {
+  cursor: pointer;
+}
+
+.notification-icon {
+  stroke: #0085FF;
+  stroke-width: 0.35mm;
+  fill: #72BBFF;
+}
+
+.mention {
+  border-radius: 5px;
+  background-color: white;
+  font-weight: lighter;
+}
+.mention .reference-note {
+  width: 80%;
+  margin: 0 auto 0 auto;
+  padding-bottom: 30px;
+  font-size: 15px;
+  color: gray;
+}
+.mention:hover {
+  cursor: pointer;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=- SHOULD BE NEW SCSS FILE ONLY FOR POPUP-MODAL STUFF, BUT TEMPORARILY HERE*/
+.modal-dialog {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  margin: 0;
+  min-width: 100% !important;
+  height: 100%;
+  pointer-events: all;
+}
+
+.modal-content {
+  overflow-y: scroll;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  pointer-events: auto;
+  background-color: white;
+  background-clip: padding-box;
+  border-style: none;
+  border-radius: 10px;
+  outline: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.modal-content .modal-button {
+  margin-top: 20px;
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 450;
+  color: white;
+}
+.modal-content #close {
+  font-weight: 450;
+  color: #454545;
+  border-style: none;
+  background-color: white;
+}
+.modal-content .modal-header {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 0;
+  width: 80%;
+  font-weight: 450 !important;
+  margin-top: 20px;
+  color: #454545;
+}
+.modal-content .modal-header .modal-title {
+  font-weight: 450;
+}
+.modal-content .modal-body {
+  width: 80%;
+  padding: 1rem 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.modal-content form .form-label {
+  font-weight: 450;
+  color: #454545;
+}
+.modal-content form .form-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.modal-content form .button-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-content form .form-control {
+  background-color: #f8f9fa;
+}
+.modal-content form .signup-toggler {
+  color: #339CFE;
+  font-weight: normal;
+  text-decoration: underline;
+  text-decoration-color: #339CFE;
+}
+.modal-content form .signup-toggler:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-*/
+#homeBody {
+  background-color: #454545;
+}
+
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 450;
+  font-size: 30px;
+  color: white;
+  margin-left: 5%;
+  padding-top: 40px;
+}
+
+.dark {
+  color: #363636;
+  font-weight: bold;
+}
+
+div.vagabond-navbar {
+  display: flex;
+  order: 1;
+  color: white;
+  background-color: #363636;
+  height: 70px;
+  justify-content: space-between;
+}
+div.vagabond-navbar a {
+  color: white;
+  margin: auto 0px auto 25px;
+}
+div.vagabond-navbar #vagabondTitle {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 450;
+  font-size: 25px;
+  padding-top: 10px;
+  color: white;
+}
+div.vagabond-navbar .logoAndTitle {
+  display: flex;
+  margin-left: 25px;
+}
+div.vagabond-navbar svg.icon {
+  margin: auto 0px auto 25px;
+  color: white;
+}
+
+#container-root {
+  display: flex;
+  height: calc(100vh - 70px);
+}
+
+#sidebar-left, #sidebar-right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  transition: visibility 1s ease-in-out;
+}
+
+#container-center {
+  width: 40%;
+  overflow-y: scroll;
+}
+
+.sidebar-top-bar {
+  display: flex;
+  justify-content: flex-start;
+  background-color: white;
+}
+
+.visibility-button {
+  border-style: none;
+  background: rgba(255, 255, 255, 0);
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 450;
+  font-size: 30px;
+  color: #454545;
+  padding: 10px;
+}
+
+#hideButtonLeft {
+  border-top-right-radius: 13px;
+  border-bottom-right-radius: 13px;
+}
+#hideButtonLeft:hover {
+  transform: scale(1.1);
+}
+
+#hideButtonRight {
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 30px;
+  border-top-left-radius: 13px;
+  border-bottom-left-radius: 13px;
+}
+#hideButtonRight:hover {
+  transform: scale(1.1);
+}
+
+#hideBarLeft {
+  background: white;
+  margin-top: 0px;
+  font-size: 30px;
+  justify-content: flex-end;
+}
+
+#hideBarRight {
+  justify-content: flex-start;
+  background: white;
+  margin-top: 0px;
+}
+
+.bar {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 0) and (max-width: 767px) {
+  #root {
+    display: block;
+  }
+
+  #container-root {
+    margin-bottom: 96px;
+    /*TODO: Less hacky method of making sure bottom navbar cant cover stuff*/
+  }
+
+  #sidebar-left {
+    display: none;
+  }
+
+  #container-center {
+    flex: 3;
+    height: 100%;
+  }
+
+  #sidebar-right {
+    display: none;
+  }
+
+  div.vagabond-navbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    line-height: normal;
+  }
+  div.vagabond-navbar .logoAndTitle {
+    display: none;
+  }
+  div.vagabond-navbar .icon-bar-horizontal {
+    width: 100%;
+    justify-content: space-around;
+    margin: 0;
+  }
+  div.vagabond-navbar .icon-bar-horizontal-searching {
+    display: none;
+  }
+  div.vagabond-navbar .bar-parent-searching {
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  div.vagabond-navbar .search-bar {
+    width: 100%;
+  }
+  div.vagabond-navbar svg.icon {
+    margin: 0;
+  }
+
+  .modal-content {
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+  }
+}
+#compose-note-modal {
+  display: flex;
+  flex-wrap: overflow;
+  flex-direction: row;
+  margin: 0px;
+  justify-content: space-between;
+  width: 100%;
+}
+#compose-note-modal .compose-note {
+  display: flex;
+  background-color: white;
+  border-style: none;
+  border-width: 0;
+  border-radius: 12px;
+}
+#compose-note-modal .compose-note .textarea-container {
+  flex: 1;
+  font-size: 15px;
+}
+#compose-note-modal .buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#compose-note {
+  display: flex;
+  flex-wrap: overflow;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  width: 92%;
+}
+#compose-note .compose-note {
+  display: flex;
+  flex: 6;
+  background-color: white;
+  border-style: none;
+  border-width: 0;
+  border-radius: 12px;
+  margin-right: 10px;
+}
+#compose-note .compose-note .textarea-container {
+  margin: 10px;
+  flex: 1;
+}
+#compose-note .buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#compose-note .post {
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 450;
+  font-size: 15px;
+  color: white;
+  border-style: none;
+  height: 46%;
+}
+#compose-note .draft {
+  border-radius: 12px;
+  border-color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 450;
+  font-size: 15px;
+  color: #454545;
+  padding-left: 5px;
+  align-items: center;
+  height: 46%;
+}
+#compose-note .subIconWhite {
+  fill: white;
+  height: 30px;
+  width: 30px;
+  padding-right: 7px;
+}
+#compose-note .subIconSecondary {
+  fill: #454545;
+  stroke: white;
+  height: 30px;
+  width: 30px;
+  padding-right: 7px;
+}
+
+@media only screen and (min-width: 0) and (max-width: 991px) {
+  #compose-note {
+    flex-direction: column;
+  }
+  #compose-note .buttons {
+    width: 98%;
+    margin: 10px 0px 10px 0px;
+    padding: 0px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  #compose-note .buttons .post {
+    order: 2;
+    width: 49%;
+    margin: 0px 0px 0px 5px;
+    justify-content: center;
+  }
+  #compose-note .buttons .draft {
+    order: 1;
+    width: 49%;
+    margin: 0px 5px 0px 0px;
+    justify-content: center;
+  }
+}
+.note {
+  display: flex;
+  flex-direction: row;
+  margin: 16px auto 0 auto;
+  border: 0px !important;
+  border-style: none !important;
+  background-color: white;
+  width: 92%;
+  font-size: 15px !important;
+  padding: 10px;
+}
+.note .pfp-container {
+  width: 64px;
+}
+.note .content-container {
+  margin: 0px 15px 0px 15px;
+  word-wrap: anywhere;
+  color: #454545;
+  width: 100%;
+}
+.note .content-container .user-and-time {
+  display: flex;
+  align-items: baseline;
+  overflow-x: scroll;
+  flex-direction: column;
+}
+.note .content-container .user-and-time .handle {
+  font-weight: bold;
+  color: #363636;
+}
+.note .content-container .user-and-time .time {
+  display: flex;
+  color: #6c757d;
+  font-size: 13px;
+  overflow-x: scroll;
+}
+.note .content-container .note-content {
+  color: black;
+  margin: 10px 0px 10px 0px !important;
+}
+.note .content-container .note-content h1, .note .content-container .note-content h2, .note .content-container .note-content h3, .note .content-container .note-content h4 {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+.note .content-container .note-content p {
+  margin: 0;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+}
+.note .note-icon {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  transition: fill 0.1s ease-in-out;
+}
+.note .note-icon:hover {
+  fill: #e9ecef;
+}
+.note .note-icon:active {
+  fill: #339CFE;
+}
+
+#root {
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.icon-bar-vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #6c757d;
+}
+
+.icon-bar-horizontal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #6c757d;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin: 5px;
+  transition-property: color;
+  transition: all 250ms ease-in-out;
+}
+.icon:hover {
+  color: #339CFE;
+  transform: scale(1.1);
+}
+
+textarea.vagabond {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  resize: none;
+  overflow: scroll;
+  border: none;
+  outline: none;
+}
+
+.vagabond-tile {
+  border-radius: 15px;
+  border: 1px solid #adb5bd;
+  padding: 5px;
+}
+
+p {
+  font-size: 14pt;
+}
+
+/*Extra small, small, and medium */
+
+/*# sourceMappingURL=vagabond.css.map */

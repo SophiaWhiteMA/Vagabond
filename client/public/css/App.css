@@ -1,0 +1,35 @@
+#container-primary {
+  margin: 5px;
+  display: flex;
+}
+
+#container-left {
+  outline: 1px solid black;
+  flex: 1;
+  padding: 10px;
+}
+
+#container-center {
+  outline: 1px solid black;
+  flex: 4;
+  padding: 10px;
+}
+
+#container-right {
+  outline: 1px solid black;
+  flex: 1;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 768 -1) {
+  body {
+    background-color: blue;
+  }
+}
+@media only screen and (min-width: 768) {
+  body {
+    background-color: red;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */

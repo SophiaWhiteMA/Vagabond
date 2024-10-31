@@ -1,0 +1,5 @@
+*.pyc
+*.eslintcache
+server/vagabond/static/*
+.vscode/*
+client/package-lock.json

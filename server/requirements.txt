@@ -1,0 +1,12 @@
+flask
+flask-sqlalchemy
+flask-limiter
+flask-cors
+mysql-connector-python
+bcrypt
+pycryptodome
+beautifulsoup4
+requests
+python-dateutil
+cerberus
+python-dotenv
